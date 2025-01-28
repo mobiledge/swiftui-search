@@ -80,8 +80,7 @@ if data_df is not None:
     if search_term:
         filtered_df = data_df[data_df['title'].str.lower(
         ).str.contains(search_term)]
-        st.markdown(f"Found **{len(filtered_df)
-                               }** components matching '*{search_term}*'")
+        st.markdown(f"Found **{len(filtered_df)}** components matching '*{search_term}*'")
     else:
         filtered_df = data_df
 
